@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Remove Big File Project</title>
+{% endblock %}
+
+{% block body %}
+<h1>Your computer can run faster today!</h1>
+		<p>You just need to remove the largest files from some of your folders. It's easy with this small project. Enjoy :)</p>
+		<br>
+	<form method="POST" action="/home">
+		<button type="submit" name="RBF" value="RBF">Remove files</button> <br>
+		<br>
+	</form>
+	<form method="POST" action="/about">
+		<button type="submit" name="About" value="About1">See About</button><br>
+{% endblock %}
