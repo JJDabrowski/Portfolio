@@ -1,2 +1,11 @@
-RBFproject/venv/
-RBFproject/__pycache__/
+#RBF Project
+
+RemoveBigFile/RBFproject/venv/
+RemoveBigFile/RBFproject/__pycache__/
+
+#Lotto App
+.DS_Store
+.TemporaryItems
+.Trashes
+.build/
+*.hmap
