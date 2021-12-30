@@ -20,11 +20,18 @@ class RootController: UIViewController {
     
 }
 
-@IBAction func duzyLotek(_ sender: Any) {
-}
+@IBAction func bigLotto(_ sender: Any) {
+    
+    }
 
-@IBAction func malyLotek(_ sender: Any) {
-}
+@IBAction func smallLotto(_ sender: Any) {
+    
+    }
+    
+@IBAction func euroJackpot(_ sender: Any) {
+    
+    }
+    
     
 }
 

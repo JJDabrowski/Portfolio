@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DLController: UIViewController {
+class BigLottoController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,32 +16,32 @@ class DLController: UIViewController {
         
     }
     
-    @IBOutlet weak var fResult:UILabel!
+    @IBOutlet weak var bigLottoResult: UILabel!
     
     //A function to randomize the X numbers from Y set
     
-    func iterateNremove() -> (Set<Int>, Set<Int>){
-        var nums = Set<Int>(1...49)
-        var reslts = Set<Int>()
+    func iterateAndRemove() -> (Set<Int>, Set<Int>){
+        var numbers = Set<Int>(1...49)
+        var results = Set<Int>()
         for _ in 1...6{
-            let randNum = nums.randomElement()!
-            reslts.insert(randNum)
-            nums.remove(randNum)
+            let randomNumbers = numbers.randomElement()!
+            results.insert(randomNumbers)
+            numbers.remove(randomNumbers)
         }
-    return (nums, reslts)
+    return (numbers, results)
     }
 
 
     @IBAction func randomize(_ sender: Any) {
         
         //call the randomizing function and the first Set from its results
-        let go = iterateNremove()
-        let res = go.1
+        let runFunction = iterateAndRemove()
+        let result = runFunction.1
         
         //change set to String without square brackets
-        let strng = res.map(String.init).joined(separator: ", ")
+        let theString = result.map(String.init).joined(separator: ", ")
         
-        fResult.text = strng
+        bigLottoResult.text = theString
         
     }
     
@@ -49,7 +49,8 @@ class DLController: UIViewController {
     @IBAction func switchViews(_ sender: UIButton){
     }
     
-    @IBAction func wroc(_ sender: Any) {
+   
+    @IBAction func goBack(_ sender: Any) {
     }
     /*
     // MARK: - Navigation

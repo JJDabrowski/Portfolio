@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EJPController: UIViewController {
+class EuroJackpotController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     
@@ -24,30 +24,30 @@ class EJPController: UIViewController {
     
     func allTogether(_ SetB:Set<Int>, _ Scope:ClosedRange<Int>) -> (Set<Int>){
 
-        func iterateNremove2() -> (Set<Int>, Set<Int>){
+        func iterateAndRemove2() -> (Set<Int>, Set<Int>){
         
-            var nums = SetB
-            let scp = Scope
+            var numbers = SetB
+            let scope = Scope
         
-            var reslts = Set<Int>()
+            var results = Set<Int>()
         
-            for _ in scp{
-                let randNum = nums.randomElement()!
-                reslts.insert(randNum)
-                nums.remove(randNum)
+            for _ in scope{
+                let randomNumbers = numbers.randomElement()!
+                results.insert(randomNumbers)
+                numbers.remove(randomNumbers)
             }
         
-            return (nums, reslts)
+            return (numbers, results)
         }
 
-        let go = iterateNremove2()
-        let res = go.1
+        let runFunction = iterateAndRemove2()
+        let functionResult = runFunction.1
 
-        return (res)
+        return (functionResult)
     }
     
-    
-    @IBAction func euJpRand(_ sender: Any) {
+    @IBAction func euroJackpotRandomize(_ sender: Any) {
+        
         let it = allTogether(Set(1...50), 1...5)
         let that = allTogether(Set(1...10), 1...2)
 
@@ -56,11 +56,13 @@ class EJPController: UIViewController {
 
         finalResults = [euJpStrngM, euJpStrngS]
         tableView.reloadData()
+    
     }
+    
     
 }
 
-extension EJPController: UITableViewDataSource {
+extension EuroJackpotController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return finalResults.count
     }
