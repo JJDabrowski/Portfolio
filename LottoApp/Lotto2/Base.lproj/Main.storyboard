@@ -27,8 +27,8 @@
                                             <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="duzyLotek:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Azl-R4-Iqr"/>
-                                            <segue destination="eiV-se-8ly" kind="show" identifier="goToDL" id="jlM-Da-5Ac"/>
+                                            <action selector="bigLotto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XhS-rN-aon"/>
+                                            <segue destination="eiV-se-8ly" kind="show" id="hxQ-Z1-KKt"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkH-3Q-uUK">
@@ -38,8 +38,8 @@
                                             <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="malyLotek:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iom-4g-LU2"/>
-                                            <segue destination="QoC-az-STS" kind="show" id="MIV-bg-ddi"/>
+                                            <action selector="smallLotto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hrg-B9-kfC"/>
+                                            <segue destination="QoC-az-STS" kind="show" id="7x2-No-1CC"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -59,6 +59,7 @@
                                     <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="euroJackpot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J2y-Wd-WQP"/>
                                     <segue destination="ucR-uy-T0r" kind="show" id="Bb7-aK-hse"/>
                                 </connections>
                             </button>
@@ -102,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="-613" y="-60"/>
         </scene>
-        <!--Controller-->
+        <!--Big Lotto Controller-->
         <scene sceneID="MNd-wc-Rjc">
             <objects>
-                <viewController storyboardIdentifier="DL" id="eiV-se-8ly" customClass="DLController" customModule="Lotto2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DL" id="eiV-se-8ly" customClass="BigLottoController" customModule="Lotto2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lkr-SI-rn8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,8 +129,8 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Powrót"/>
                                         <connections>
-                                            <action selector="wroc:" destination="eiV-se-8ly" eventType="touchUpInside" id="nE0-1h-hmf"/>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="UAB-B0-FMT"/>
+                                            <action selector="goBack:" destination="eiV-se-8ly" eventType="touchUpInside" id="8bs-Gx-6HF"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="ILp-sQ-tgD"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -190,7 +191,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ciz-Ae-27f"/>
                     <connections>
-                        <outlet property="fResult" destination="aqP-4e-3su" id="XWp-eB-hCj"/>
+                        <outlet property="bigLottoResult" destination="aqP-4e-3su" id="aaF-aA-cWF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hz0-85-twT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -198,10 +199,10 @@
             </objects>
             <point key="canvasLocation" x="101" y="29"/>
         </scene>
-        <!--Controller-->
+        <!--Small Lotto Controller-->
         <scene sceneID="fgB-D2-ajl">
             <objects>
-                <viewController storyboardIdentifier="ML" id="QoC-az-STS" customClass="MLController" customModule="Lotto2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ML" id="QoC-az-STS" customClass="SmallLottoController" customModule="Lotto2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tdE-Te-ClY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -292,10 +293,10 @@
             </objects>
             <point key="canvasLocation" x="740.57971014492762" y="31.473214285714285"/>
         </scene>
-        <!--Controller-->
+        <!--Euro Jackpot Controller-->
         <scene sceneID="zfX-4x-RZW">
             <objects>
-                <viewController storyboardIdentifier="EJP" id="ucR-uy-T0r" customClass="EJPController" customModule="Lotto2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EJP" id="ucR-uy-T0r" customClass="EuroJackpotController" customModule="Lotto2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SNM-sf-s0G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -341,7 +342,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Losuj"/>
                                         <connections>
-                                            <action selector="euJpRand:" destination="ucR-uy-T0r" eventType="touchUpInside" id="1uH-my-ve4"/>
+                                            <action selector="euroJackpotRandomize:" destination="ucR-uy-T0r" eventType="touchUpInside" id="mCH-cn-iYG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fn-Lq-wwx">
