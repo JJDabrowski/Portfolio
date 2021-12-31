@@ -16,21 +16,6 @@ class RootController: UIViewController {
         // Do any additional setup after loading the view.
     
 }
-@IBAction func switchViews(_ sender: UIButton){
-    
-}
-
-@IBAction func bigLotto(_ sender: Any) {
-    
-    }
-
-@IBAction func smallLotto(_ sender: Any) {
-    
-    }
-    
-@IBAction func euroJackpot(_ sender: Any) {
-    
-    }
     
     
 }

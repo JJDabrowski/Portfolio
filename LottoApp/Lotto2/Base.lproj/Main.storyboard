@@ -27,7 +27,6 @@
                                             <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="bigLotto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XhS-rN-aon"/>
                                             <segue destination="eiV-se-8ly" kind="show" id="hxQ-Z1-KKt"/>
                                         </connections>
                                     </button>
@@ -38,7 +37,6 @@
                                             <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="smallLotto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hrg-B9-kfC"/>
                                             <segue destination="QoC-az-STS" kind="show" id="7x2-No-1CC"/>
                                         </connections>
                                     </button>
@@ -59,8 +57,7 @@
                                     <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="euroJackpot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J2y-Wd-WQP"/>
-                                    <segue destination="ucR-uy-T0r" kind="show" id="Bb7-aK-hse"/>
+                                    <segue destination="ucR-uy-T0r" kind="show" id="u4J-4t-IuH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -119,7 +116,6 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Losuj"/>
                                         <connections>
-                                            <action selector="EJPrand:" destination="sOs-Va-7uW" eventType="touchUpInside" id="8H4-VI-Dna"/>
                                             <action selector="randomize:" destination="eiV-se-8ly" eventType="touchUpInside" id="KTb-8g-yty"/>
                                         </connections>
                                     </button>
@@ -129,7 +125,6 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Powrót"/>
                                         <connections>
-                                            <action selector="goBack:" destination="eiV-se-8ly" eventType="touchUpInside" id="8bs-Gx-6HF"/>
                                             <segue destination="BYZ-38-t0r" kind="show" id="ILp-sQ-tgD"/>
                                         </connections>
                                     </button>
@@ -195,7 +190,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hz0-85-twT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="sOs-Va-7uW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="101" y="29"/>
         </scene>
@@ -238,7 +232,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Losuj"/>
                                         <connections>
-                                            <action selector="mlRand:" destination="QoC-az-STS" eventType="touchUpInside" id="cc4-cO-8SI"/>
+                                            <action selector="smallLottoRandomize:" destination="QoC-az-STS" eventType="touchUpInside" id="f2n-4o-zHX"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yy2-LW-p0N">
@@ -247,8 +241,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Powrót"/>
                                         <connections>
-                                            <action selector="wroc:" destination="QoC-az-STS" eventType="touchUpInside" id="QSe-PP-bQ3"/>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="we2-0R-yOQ"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="06C-P5-dSi"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -286,7 +279,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="tqG-2H-6QQ"/>
                     <connections>
-                        <outlet property="mlResult" destination="h25-Mu-r05" id="M8h-Hc-hjR"/>
+                        <outlet property="smallLottoResult" destination="h25-Mu-r05" id="gg6-MP-zah"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMD-HK-Vwc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

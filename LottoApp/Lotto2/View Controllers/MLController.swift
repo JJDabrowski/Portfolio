@@ -17,7 +17,7 @@ class SmallLottoController: UIViewController {
     
     /* Couldn't fix the shortened names here fast, was getting errors on AppDelegate*/
     
-    @IBOutlet weak var mlResult: UILabel!
+    @IBOutlet weak var smallLottoResult: UILabel!
     
     func iterateAndRemove() -> (Set<Int>, Set<Int>){
         var numbers = Set<Int>(1...42)
@@ -31,24 +31,15 @@ class SmallLottoController: UIViewController {
     }
     
     
-    @IBAction func mlRand(_ sender: Any) {
-        
+    @IBAction func smallLottoRandomize(_ sender: Any) {
         let functionRun = iterateAndRemove()
         let functionResult = functionRun.1
         
         let smallLottoString = functionResult.map(String.init).joined(separator: ", ")
         
-        mlResult.text = smallLottoString
+        smallLottoResult.text = smallLottoString
     }
     
-    
-    @IBAction func switchViews(_ sender: UIButton){
-    }
-    
-    /* Couldn't fix the polish name here fast; was getting error*/
-    
-    @IBAction func wroc(_ sender: Any) {
-    }
     /*
     // MARK: - Navigation
 

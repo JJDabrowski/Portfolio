@@ -22,11 +22,11 @@ class EuroJackpotController: UIViewController {
     
     }
     
-    func allTogether(_ SetB:Set<Int>, _ Scope:ClosedRange<Int>) -> (Set<Int>){
+    func allTogether(_ SetEuroJackPot:Set<Int>, _ Scope:ClosedRange<Int>) -> (Set<Int>){
 
         func iterateAndRemove2() -> (Set<Int>, Set<Int>){
         
-            var numbers = SetB
+            var numbers = SetEuroJackPot
             let scope = Scope
         
             var results = Set<Int>()
@@ -48,13 +48,13 @@ class EuroJackpotController: UIViewController {
     
     @IBAction func euroJackpotRandomize(_ sender: Any) {
         
-        let it = allTogether(Set(1...50), 1...5)
-        let that = allTogether(Set(1...10), 1...2)
+        let mainEuroJackPot = allTogether(Set(1...50), 1...5)
+        let secondaryEuroJackpot = allTogether(Set(1...10), 1...2)
 
-        let euJpStrngM = it.map(String.init).joined(separator: ", ")
-        let euJpStrngS = that.map(String.init).joined(separator: ", ")
+        let mainEuroJackPotString = mainEuroJackPot.map(String.init).joined(separator: ", ")
+        let secondaryEuroJackPotString = secondaryEuroJackpot.map(String.init).joined(separator: ", ")
 
-        finalResults = [euJpStrngM, euJpStrngS]
+        finalResults = [mainEuroJackPotString, secondaryEuroJackPotString]
         tableView.reloadData()
     
     }
