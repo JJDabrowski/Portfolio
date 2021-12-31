@@ -39,19 +39,12 @@ class BigLottoController: UIViewController {
         let result = runFunction.1
         
         //change set to String without square brackets
-        let theString = result.map(String.init).joined(separator: ", ")
+        let resultString = result.map(String.init).joined(separator: ", ")
         
-        bigLottoResult.text = theString
+        bigLottoResult.text = resultString
         
     }
     
-    
-    @IBAction func switchViews(_ sender: UIButton){
-    }
-    
-   
-    @IBAction func goBack(_ sender: Any) {
-    }
     /*
     // MARK: - Navigation
 
