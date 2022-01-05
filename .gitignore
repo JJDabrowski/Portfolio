@@ -9,3 +9,13 @@ RemoveBigFile/RBFproject/__pycache__/
 .Trashes
 .build/
 *.hmap
+
+
+#SwiftUI Lotto 
+.AppleDouble
+.LSOverride
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+xcuserdata/
