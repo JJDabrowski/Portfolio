@@ -7,30 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B96E4CEF27D384B800F50DE6 /* SharedModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96E4CEE27D384B800F50DE6 /* SharedModule.swift */; };
-		B9EEB486278632DA007751BB /* LottoSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EEB485278632DA007751BB /* LottoSwiftUIApp.swift */; };
-		B9EEB488278632DA007751BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EEB487278632DA007751BB /* ContentView.swift */; };
-		B9EEB48A278632DD007751BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9EEB489278632DD007751BB /* Assets.xcassets */; };
-		B9EEB48D278632DD007751BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9EEB48C278632DD007751BB /* Preview Assets.xcassets */; };
-		B9EEB49427863314007751BB /* BigLottoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EEB49327863314007751BB /* BigLottoView.swift */; };
-		B9EEB4982786332F007751BB /* EuroJackpotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EEB4972786332F007751BB /* EuroJackpotView.swift */; };
-		B9EEB49A27863357007751BB /* SmallLottoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EEB49927863357007751BB /* SmallLottoView.swift */; };
+		B96E4CE127D3833800F50DE6 /* RockPaperScissorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96E4CE027D3833800F50DE6 /* RockPaperScissorsApp.swift */; };
+		B96E4CE327D3833800F50DE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96E4CE227D3833800F50DE6 /* ContentView.swift */; };
+		B96E4CE527D3833C00F50DE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B96E4CE427D3833C00F50DE6 /* Assets.xcassets */; };
+		B96E4CE827D3833C00F50DE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B96E4CE727D3833C00F50DE6 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B96E4CEE27D384B800F50DE6 /* SharedModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedModule.swift; sourceTree = "<group>"; };
-		B9EEB482278632DA007751BB /* LottoSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LottoSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9EEB485278632DA007751BB /* LottoSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoSwiftUIApp.swift; sourceTree = "<group>"; };
-		B9EEB487278632DA007751BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B9EEB489278632DD007751BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B9EEB48C278632DD007751BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B9EEB49327863314007751BB /* BigLottoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigLottoView.swift; sourceTree = "<group>"; };
-		B9EEB4972786332F007751BB /* EuroJackpotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuroJackpotView.swift; sourceTree = "<group>"; };
-		B9EEB49927863357007751BB /* SmallLottoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallLottoView.swift; sourceTree = "<group>"; };
+		B96E4CDD27D3833800F50DE6 /* RockPaperScissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissors.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B96E4CE027D3833800F50DE6 /* RockPaperScissorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsApp.swift; sourceTree = "<group>"; };
+		B96E4CE227D3833800F50DE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B96E4CE427D3833C00F50DE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B96E4CE727D3833C00F50DE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B9EEB47F278632DA007751BB /* Frameworks */ = {
+		B96E4CDA27D3833800F50DE6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,41 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B9EEB479278632DA007751BB = {
+		B96E4CD427D3833800F50DE6 = {
 			isa = PBXGroup;
 			children = (
-				B9EEB484278632DA007751BB /* LottoSwiftUI */,
-				B9EEB483278632DA007751BB /* Products */,
+				B96E4CDF27D3833800F50DE6 /* RockPaperScissors */,
+				B96E4CDE27D3833800F50DE6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B9EEB483278632DA007751BB /* Products */ = {
+		B96E4CDE27D3833800F50DE6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B9EEB482278632DA007751BB /* LottoSwiftUI.app */,
+				B96E4CDD27D3833800F50DE6 /* RockPaperScissors.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B9EEB484278632DA007751BB /* LottoSwiftUI */ = {
+		B96E4CDF27D3833800F50DE6 /* RockPaperScissors */ = {
 			isa = PBXGroup;
 			children = (
-				B9EEB485278632DA007751BB /* LottoSwiftUIApp.swift */,
-				B9EEB487278632DA007751BB /* ContentView.swift */,
-				B9EEB49327863314007751BB /* BigLottoView.swift */,
-				B9EEB49927863357007751BB /* SmallLottoView.swift */,
-				B9EEB4972786332F007751BB /* EuroJackpotView.swift */,
-				B96E4CEE27D384B800F50DE6 /* SharedModule.swift */,
-				B9EEB489278632DD007751BB /* Assets.xcassets */,
-				B9EEB48B278632DD007751BB /* Preview Content */,
+				B96E4CE027D3833800F50DE6 /* RockPaperScissorsApp.swift */,
+				B96E4CE227D3833800F50DE6 /* ContentView.swift */,
+				B96E4CE427D3833C00F50DE6 /* Assets.xcassets */,
+				B96E4CE627D3833C00F50DE6 /* Preview Content */,
 			);
-			path = LottoSwiftUI;
+			path = RockPaperScissors;
 			sourceTree = "<group>";
 		};
-		B9EEB48B278632DD007751BB /* Preview Content */ = {
+		B96E4CE627D3833C00F50DE6 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				B9EEB48C278632DD007751BB /* Preview Assets.xcassets */,
+				B96E4CE727D3833C00F50DE6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -82,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B9EEB481278632DA007751BB /* LottoSwiftUI */ = {
+		B96E4CDC27D3833800F50DE6 /* RockPaperScissors */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9EEB490278632DD007751BB /* Build configuration list for PBXNativeTarget "LottoSwiftUI" */;
+			buildConfigurationList = B96E4CEB27D3833C00F50DE6 /* Build configuration list for PBXNativeTarget "RockPaperScissors" */;
 			buildPhases = (
-				B9EEB47E278632DA007751BB /* Sources */,
-				B9EEB47F278632DA007751BB /* Frameworks */,
-				B9EEB480278632DA007751BB /* Resources */,
+				B96E4CD927D3833800F50DE6 /* Sources */,
+				B96E4CDA27D3833800F50DE6 /* Frameworks */,
+				B96E4CDB27D3833800F50DE6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LottoSwiftUI;
-			productName = LottoSwiftUI;
-			productReference = B9EEB482278632DA007751BB /* LottoSwiftUI.app */;
+			name = RockPaperScissors;
+			productName = RockPaperScissors;
+			productReference = B96E4CDD27D3833800F50DE6 /* RockPaperScissors.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B9EEB47A278632DA007751BB /* Project object */ = {
+		B96E4CD527D3833800F50DE6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					B9EEB481278632DA007751BB = {
+					B96E4CDC27D3833800F50DE6 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = B9EEB47D278632DA007751BB /* Build configuration list for PBXProject "LottoSwiftUI" */;
+			buildConfigurationList = B96E4CD827D3833800F50DE6 /* Build configuration list for PBXProject "RockPaperScissors" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -122,46 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = B9EEB479278632DA007751BB;
-			productRefGroup = B9EEB483278632DA007751BB /* Products */;
+			mainGroup = B96E4CD427D3833800F50DE6;
+			productRefGroup = B96E4CDE27D3833800F50DE6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B9EEB481278632DA007751BB /* LottoSwiftUI */,
+				B96E4CDC27D3833800F50DE6 /* RockPaperScissors */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B9EEB480278632DA007751BB /* Resources */ = {
+		B96E4CDB27D3833800F50DE6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9EEB48D278632DD007751BB /* Preview Assets.xcassets in Resources */,
-				B9EEB48A278632DD007751BB /* Assets.xcassets in Resources */,
+				B96E4CE827D3833C00F50DE6 /* Preview Assets.xcassets in Resources */,
+				B96E4CE527D3833C00F50DE6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B9EEB47E278632DA007751BB /* Sources */ = {
+		B96E4CD927D3833800F50DE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9EEB488278632DA007751BB /* ContentView.swift in Sources */,
-				B9EEB4982786332F007751BB /* EuroJackpotView.swift in Sources */,
-				B96E4CEF27D384B800F50DE6 /* SharedModule.swift in Sources */,
-				B9EEB486278632DA007751BB /* LottoSwiftUIApp.swift in Sources */,
-				B9EEB49427863314007751BB /* BigLottoView.swift in Sources */,
-				B9EEB49A27863357007751BB /* SmallLottoView.swift in Sources */,
+				B96E4CE327D3833800F50DE6 /* ContentView.swift in Sources */,
+				B96E4CE127D3833800F50DE6 /* RockPaperScissorsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B9EEB48E278632DD007751BB /* Debug */ = {
+		B96E4CE927D3833C00F50DE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -222,7 +206,7 @@
 			};
 			name = Debug;
 		};
-		B9EEB48F278632DD007751BB /* Release */ = {
+		B96E4CEA27D3833C00F50DE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -277,14 +261,14 @@
 			};
 			name = Release;
 		};
-		B9EEB491278632DD007751BB /* Debug */ = {
+		B96E4CEC27D3833C00F50DE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LottoSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RockPaperScissors/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -297,7 +281,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Swantewit.LottoSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = Swantewit.RockPaperScissors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -305,14 +289,14 @@
 			};
 			name = Debug;
 		};
-		B9EEB492278632DD007751BB /* Release */ = {
+		B96E4CED27D3833C00F50DE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LottoSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RockPaperScissors/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -325,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Swantewit.LottoSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = Swantewit.RockPaperScissors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -336,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B9EEB47D278632DA007751BB /* Build configuration list for PBXProject "LottoSwiftUI" */ = {
+		B96E4CD827D3833800F50DE6 /* Build configuration list for PBXProject "RockPaperScissors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B9EEB48E278632DD007751BB /* Debug */,
-				B9EEB48F278632DD007751BB /* Release */,
+				B96E4CE927D3833C00F50DE6 /* Debug */,
+				B96E4CEA27D3833C00F50DE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B9EEB490278632DD007751BB /* Build configuration list for PBXNativeTarget "LottoSwiftUI" */ = {
+		B96E4CEB27D3833C00F50DE6 /* Build configuration list for PBXNativeTarget "RockPaperScissors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B9EEB491278632DD007751BB /* Debug */,
-				B9EEB492278632DD007751BB /* Release */,
+				B96E4CEC27D3833C00F50DE6 /* Debug */,
+				B96E4CED27D3833C00F50DE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B9EEB47A278632DA007751BB /* Project object */;
+	rootObject = B96E4CD527D3833800F50DE6 /* Project object */;
 }

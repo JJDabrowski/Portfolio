@@ -21,16 +21,7 @@ struct SmallLottoView: View {
     
     @StateObject private var state = SmallLottoViewState()
     
-    func iterateAndRemove2() -> (Set<Int>, Set<Int>){
-        var numbers = Set<Int>(1...42)
-        var results = Set<Int>()
-        for _ in 1...5{
-            let randomNumbers = numbers.randomElement()!
-            results.insert(randomNumbers)
-            numbers.remove(randomNumbers)
-        }
-    return (numbers, results)
-    }
+    private let module = SharedModule()
     
     var buttonBack : some View { Button(action: {
             self.presentationMode.wrappedValue.dismiss()
@@ -61,7 +52,7 @@ struct SmallLottoView: View {
             
             Button("Losuj"){
                 
-                let runFunction = iterateAndRemove2()
+                let runFunction = module.iterateAndRemove(Set(1...42), in: 1...5)
                 let result = runFunction.1
                 state.smallLottoResult = result.map(String.init).joined(separator: ", ")
                 

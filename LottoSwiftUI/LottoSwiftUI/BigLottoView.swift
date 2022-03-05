@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Combine
 
 
 private final class BigLottoViewState: ObservableObject {
@@ -22,16 +21,7 @@ struct BigLottoView: View {
     
     @StateObject private var state = BigLottoViewState()
     
-    func iterateAndRemove() -> (Set<Int>, Set<Int>){
-        var numbers = Set<Int>(1...49)
-        var results = Set<Int>()
-        for _ in 1...6{
-            let randomNumbers = numbers.randomElement()!
-            results.insert(randomNumbers)
-            numbers.remove(randomNumbers)
-        }
-    return (numbers, results)
-    }
+    private let module = SharedModule()
     
     var buttonBack : some View { Button(action: {
             self.presentationMode.wrappedValue.dismiss()
@@ -61,7 +51,7 @@ struct BigLottoView: View {
             
             Button("Losuj"){
                 
-                let runFunction = iterateAndRemove()
+                let runFunction = module.iterateAndRemove(Set(1...49), in: 1...6)
                 let result = runFunction.1
                 state.bigLottoResult = result.map(String.init).joined(separator: ", ")
             
