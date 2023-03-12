@@ -1,0 +1,20 @@
+{% extends 'panel.html' %}
+
+	{% block buttons %}
+		<a class ="rbf-link" style="position:absolute; left:200px" href= "{{ url_for ('about') }}">See About</a>
+	{% endblock %}
+
+	{% block content %}
+		<h1 class="rbf-h1">Your computer can run faster today!</h1>
+		<p>You just need to remove the largest files from some of your folders. It's easy with this small project. Enjoy :)</p>
+		<form method="POST" action="/congratulations">
+			<label for="from-path">Path to the folder you want to remove the largest files from:</label><br>
+			<input type="text" id="from-path" name="from-path"><br>
+			<label for="to-path">Path to the folder you want inspect your moved files in:</label><br>
+			<input type="text" id="to-path" name="to-path"><br>
+			<label for="file-count">The number of largest files you want to remove:</label><br>
+			<input type="text" id="file-count" name="file-count"><br>
+			<br>
+			<button type="submit" class="btn btn-primary rbf-button">Submit</button>
+		</form>
+	{% endblock %}

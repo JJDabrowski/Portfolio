@@ -1,0 +1,10 @@
+{% extends 'panel.html' %}
+	{% block buttons %}
+		<a class ="rbf-link" style="position:absolute; left:200px" href= "{{ url_for ('index') }}">Remove more Big Files</a>
+		<a class ="rbf-link" style="position:absolute; left:400px" href= "{{ url_for ('about') }}">About</a>
+	{% endblock %}
+
+	{% block content %}
+		<h1 class="rbf-h1">You just moved some of the largest files from the chosen folder</h1>
+		<p>They are currently in "ToBeRemoved" folder on the path you specified. Inspect them and remove those you don't need anymore.</p>
+	{% endblock %}
