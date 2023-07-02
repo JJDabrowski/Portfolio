@@ -1,21 +1,8 @@
-#RBF Project
-
 /venv/
 /__pycache__/
 
-#Lotto App
-.DS_Store
-.TemporaryItems
-.Trashes
-.build/
-*.hmap
+/TODO
 
-
-#SwiftUI Lotto 
-.AppleDouble
-.LSOverride
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-xcuserdata/
+#Django
+/db.sqlite3
+/db.sqlite3-journal
