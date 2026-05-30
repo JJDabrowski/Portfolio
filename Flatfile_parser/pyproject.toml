@@ -1,0 +1,30 @@
+[tool.poetry]
+package-mode = false
+name = "flatfile-parser"
+version = "0.0.1"
+description = "Flatfile parser for Kyriba"
+authors = ["Jacob Dabrovski <jacobdabrovski@Jacobs-MacBook-Pro.local>"]
+license = "open"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typer = "^0.12.3"
+pandas = "^2.2.2"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.0"
+
+[tool.poetry.group.pre-commit.dependencies]
+black = "^24.4.2"
+isort = "^5.13.2"
+flake8 = "^7.0.0"
+mypy = "^1.10.0"
+pre-commit = "^3.7.0"
+
+[tool.poetry.group.mypy.dependencies]
+pandas-stubs = "^2.2.1.240316"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
