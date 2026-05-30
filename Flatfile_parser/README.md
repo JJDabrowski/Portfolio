@@ -1,4 +1,4 @@
-# 0.0 Hello and welcome to flatfile parser for Kyriba #
+# 0.0 Hello and welcome to flatfile parser #
 This app was created using Python 3.10.1, typer, pandas and pytest. Check out requirements to see the versions of external libraries.
 
 # 1.0 Configuration #
