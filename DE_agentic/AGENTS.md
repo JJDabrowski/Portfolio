@@ -1,0 +1,2 @@
+1. Always before starting a task, consider if anything is ambigous and ask as many questions as you need to realize the task to the highest standard
+2. Look for the skills/commands in the `skills` folder in the root of the project
